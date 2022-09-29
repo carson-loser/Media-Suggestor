@@ -38,3 +38,4 @@ const settingsYT = {
 $.ajax(settingsYT).done(function (response) {
 	console.log(response);
 });
+$(".dropdown-trigger").dropdown();
