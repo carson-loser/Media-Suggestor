@@ -1,73 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous">
-    <title>Spotify Mapped
-    </title>
-</head>
-<body>
-    <nav>
-        <div class="nav-wrapper green accent-4 center">
-          <a href="#" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Home Page</a></li>
-            <li><a href="badges.html">YouTube</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="row">
 
-        <div class="col s3 green accent-4 ">
-          <!-- Promo Content 1 goes here -->
-          <div class="divider"></div>
-          <div class="section">
-            
-            <ul class="collection">
-                <li class="collection-item avatar">
-                  <img src="images/yuna.jpg" alt="" class="circle">
-                  <span class="Title">Artists</span>
-                  <a href="#!" class="secondary-content"><i class="material-icons">Drop down</i></a>
-                  <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>
-                  <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!">three</a></li>
-                  </ul>
-                </li>
-                <li class="collection-item avatar">
-                  <i class="material-icons circle">folder</i>
-                  <span class="title">Albums</span>
-                  <a href="#!" class="secondary-content"><i class="material-icons">Drop down</i></a>
-                </li>
-                <li class="collection-item avatar">
-                  <i class="material-icons circle green">insert_chart</i>
-                  <span class="title">Podcasts</span>
-                  <a href="#!" class="secondary-content"><i class="material-icons">Drop down</i></a>
-                </li>
-              </ul>
-            </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Spotify Mapped
+  </title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper green accent-4 center">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Home Page</a></li>
+        <li><a href="badges.html">YouTube</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="row">
+
+    <div class="col s3 green accent-4 ">
+      <!-- Promo Content 1 goes here -->
+      <div class="divider"></div>
+      <div class="section">
+
+        <ul class="collection">
+          <li class="collection-item avatar">
+            <span class="Title">Artists</span>
+            <a href="#!" class="secondary-content"><i class="material-icons"></i></a>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i
+                class="material-icons right">Artist Options</i></a></li>
+
+          <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+          </ul>
+          </li>
+        </ul>
+
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle">folder</i>
+          <span class="title">Albums</span>
+          <a href="#!" class="secondary-content"><i class="material-icons">Drop down</i></a>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i
+            class="material-icons right">Artist Options</i></a></li>
+
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      </li>
+        </li>
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle green">insert_chart</i>
+          <span class="title">Podcasts</span>
+          <a href="#!" class="secondary-content"><i class="material-icons">Drop down</i></a>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i
+            class="material-icons right">Artist Options</i></a></li>
+
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      </li>
+        </li>
+        </ul>
       </div>
-      <!-- <div class="row">
+    </div>
+
+
+  </div>
+  <!-- <div class="row">
         <div class="col s3">grey nav panel</div>
         <div class="col s9">pg content</div>
       </div> -->
-    <script src="https://js.arcgis.com/4.24/"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="assets/js/script.js"></script>
+  <script src="https://js.arcgis.com/4.24/"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
