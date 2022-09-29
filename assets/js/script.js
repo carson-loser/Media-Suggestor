@@ -6,12 +6,12 @@
 // $(document).ready(function(){
 //   $(dropdownMenu).formSelect();
 // });
-
+var searchTerm = "Rock";
 
 const settingsSPOT = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://spotify23.p.rapidapi.com/search/?q=%3CREQUIRED%3E&type=multi&offset=0&limit=10&numberOfTopResults=5",
+	"url": `https://spotify23.p.rapidapi.com/search/?q=%3C${searchTerm}%3E&type=multi&offset=0&limit=10&numberOfTopResults=5`,
 	"method": "GET",
 	"headers": {
 		"X-RapidAPI-Key": "e88899cff1mshe2370cf428284dap1855a0jsn65cf40418126",
