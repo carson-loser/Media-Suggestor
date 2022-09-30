@@ -59,3 +59,7 @@
 .spotify-button:active {
   opacity: .5;
 }
+
+.btn {
+  background-color:#1DB954;
+}
