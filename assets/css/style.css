@@ -1,6 +1,44 @@
-.title {
-  text-align: center;
-  font-size: 25px;
-  background-color: black;
-  margin: none;
+.youtube-button {
+  background-color: white;
+  color: grey;
+  border-style: solid;
+  font-size: 14px;
+  font-weight: bold;
+  border-color: grey;
+  padding: 9px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border-width: 1px;
+  margin-right: 6px;
+}
+
+.youtube-button:hover {
+  background-color: #FF0000;
+  color: white;
+  border-color:#FF0000;
+}
+
+.spotify-button {
+  background-color: white;
+  color: grey;
+  border-style: solid;
+  font-size: 14px;
+  font-weight: bold;
+  border-color: grey;
+  padding: 9px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border-width: 1px;
+  margin-right: 6px;
+}
+
+.spotify-button:hover {
+  background-color: #1DB954;
+  color: white;
+  border-color: #1DB954;
+}
+
+.youtube-button:active,
+.spotify-button:active {
+  opacity: .5;
 }
