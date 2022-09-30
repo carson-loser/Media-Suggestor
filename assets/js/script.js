@@ -44,3 +44,16 @@ $.ajax(settingsYT).done(function (response) {
 });
 $(".dropdown-trigger").dropdown();
 
+
+function spotifySearchItUp (){
+	spotifyHomePage.style.display="none";
+	spotifySearchPage.style.display="block";
+	displaySpotifySearch();
+}
+function youtubeSearchItUp (){
+	youtubeHomePage.style.display = "none";
+	youtubeSearchPage.style.display="block";
+	displayYoutubeSearch()
+}
+
+
