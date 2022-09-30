@@ -6,6 +6,10 @@
 // $(document).ready(function(){
 //   $(dropdownMenu).formSelect();
 // });
+var spotifyButton = document.querySelector(".spotify-button");
+
+
+
 var searchTerm = "Rock";
 
 const settingsSPOT = {
@@ -39,3 +43,4 @@ $.ajax(settingsYT).done(function (response) {
 	console.log(response);
 });
 $(".dropdown-trigger").dropdown();
+
