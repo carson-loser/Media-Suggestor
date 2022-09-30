@@ -18,33 +18,27 @@
     <div class="nav-wrapper green accent-4 center">
       <a href="#" class="brand-logo">Logo</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Home Page</a></li>
+        <li><a href="index.html">Home Page</a></li>
         <li><a href="badges.html">YouTube</a></li>
       </ul>
     </div>
   </nav>
-  <div class="row">
 
+  <div class="section main-section">
     <div class="row">
-
-      <div class="col s3 green accent-4 ">
-        <!-- Promo Content 1 goes here -->
-        <div class="divider">
-            </div>
-        <div class="section">
-          <ul class="collection">
-            <li class="collection-item avatar">
-              <span class="Title">Mood</span>
-              <a href="#!" class="secondary-content"><i class="material-icons"></i></a>
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i
-                  class="material-icons right">Mood Options</i></a></li>
-            <ul id="dropdown1" class="dropdown-content">
-              <li><a href="#!">one</a></li>
-              <li><a href="#!">two</a></li>
-              <li class="divider"></li>
-              <li><a href="#!">three</a></li>
-            </ul>
-            </li>
+      <div class="col s12 l3" id="drop-down">
+        <div class="input-field col s12">
+          <h6>Mood</h6>
+          <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+  
+          <!-- Dropdown Structure -->
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
           </ul>
           <ul class="collection">
             <li class="collection-item avatar">
@@ -77,13 +71,53 @@
           </ul>
         </div>
       </div>
-
-
+    </div>
   </div>
-  <!-- <div class="row">
-        <div class="col s3">grey nav panel</div>
-        <div class="col s9">pg content</div>
-      </div> -->
+
+<!-- New section -->
+
+<div class="section main-section">
+  <div class="row">
+    <div class="col s12 l3" id="drop-down">
+      <div class="input-field col s12">
+        <h6>Genre</h6>
+        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><a href="#!">three</a></li>
+          <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+          <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Next Section -->
+
+<div class="section main-section">
+  <div class="row">
+    <div class="col s12 l3" id="drop-down">
+      <div class="input-field col s12">
+        <h6>Artist</h6>
+        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><a href="#!">three</a></li>
+          <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+          <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+
   <script src="https://js.arcgis.com/4.24/"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
