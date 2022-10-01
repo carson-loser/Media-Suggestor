@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/spotify.css">
   <title>Spotify Mapped
   </title>
 </head>
@@ -28,35 +29,30 @@
   </nav>
 
   <div class="section main-section">
-    <div class="row">
-      <div class="col s12 l3" id="drop-down">
-        <div class="input-field col s12">
-          <h6>Mood</h6>
-          <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
-
-          <!-- Dropdown Structure -->
-          <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="#!">stay in bed</a></li>
-            <li><a href="#!">sad hour</a></li>
-            <li class="divider" tabindex="-1"></li>
-            <li><a href="#!">you & me</a></li>
-            <li><a href="#!"><i class="material-icons">windows down</i></a></li>
-            <li><a href="#!"><i class="material-icons">all the feels</i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <div class="input-field col s12">
+        <select multiple id="moodOptions">
+          <option value="" disabled selected>Choose your option</option>
+          <!-- <option value="1">Stay In Bed</option>
+          <option value="2">Sad Boy Hours</option>
+          <option value="3">You & Me</option>
+          <option value="4">All the Feels</option> -->
+        </select>
+        <label>Mood</label>
+      </div> 
+  </div>
+  <button class="btn waves-effect waves-light"  id= "searchBTN"type="submit" name="action">Submit
+    <i class="material-icons right"></i>
+  </button>
 
     <!-- New section -->
 
-    <div class="section main-section">
+    <!-- <div class="section main-section">
       <div class="row">
         <div class="col s12 l3" id="drop-down">
           <div class="input-field col s12">
             <h6>Genre</h6>
             <a class='dropdown-trigger btn' href='#' data-target='dropdown2'>Drop Me!</a>
 
-            <!-- Dropdown Structure -->
             <ul id='dropdown2' class='dropdown-content'>
               <li><a href="#!">pop</a></li>
               <li><a href="#!">rock</a></li>
@@ -67,9 +63,8 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- Next Section -->
 
       <script src="https://js.arcgis.com/4.24/"></script>
       <script src="https://code.jquery.com/jquery-3.6.1.min.js"
