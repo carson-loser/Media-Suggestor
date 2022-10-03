@@ -79,6 +79,7 @@ $('#searchBTN').on("click", function () {
 // $("#playlistTable").css("display", "block");
 // };
 function populateTable(playlistValues){
+	$("#playlistTableBody").empty();
 	$.each(playlistValues, function(i,val){
 console.log(val.playlists.items);
 		$.each(val.playlists.items,function(j,playlist){
