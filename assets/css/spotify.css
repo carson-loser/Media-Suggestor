@@ -1,3 +1,12 @@
 .spotify-content{
     height: 100vh;
 }
+
+body {
+    background-color: #f8f9fa;
+}
+
+td {
+    text-align: center;
+ }
+
