@@ -12,13 +12,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/youtube.css">
+
   <title>YouTube
   </title>
 </head>
 
-<body>
+<body class="youtube-content">
 
-</body class="youtube-content">
 <nav>
   <div class="nav-wrapper red accent-4 center">
     <a href="#" class="brand-logo">YouTube</a>
@@ -29,21 +30,37 @@
   </div>
 </nav>
 
+<div>
 <div class="section main-section">
-  <div class="row">
-    <div class="col s12 l3" id="drop-down">
-      <div class="input-field col s12">
-        <h6>Mood</h6>
-        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Click here</a>
-
-        <!-- Dropdown Structure -->
-        <ul id='dropdown1' class='dropdown-content youtubeDropdown'>
-          <li><a href="#!">Podcast</a></li>
-          <li><a href="#!">Content Creators</a></li>
-          <li><a href="#!">Trending Categories</a></li>
-        </ul>
-      </div>
-    </div>
+  <div class="input-field col s12">
+    <select multiple id="searchOptions">
+      <option value="" disabled selected>Choose your option</option>
+      <!-- <option value="1">Stay In Bed</option>
+      <option value="2">Sad Boy Hours</option>
+      <option value="3">You & Me</option>
+      <option value="4">All the Feels</option> -->
+    </select>
+    <label>Search Options</label>
+  </div> 
+</div>
+  <button class="btn waves-effect waves-light"  id= "searchBTN"type="submit" name="action">Submit
+    <i class="material-icons right"></i>
+  </button>
+</div>
+<div>
+  <table id="playlistTable">
+    <thead>
+      <tr>
+          <th>Playlist Title</th>
+          <th>Video Count</th>
+          <th>Thumbnail</th>
+      </tr>
+    </thead>
+  
+    <tbody id="playlistTableBody">
+  
+    </tbody>
+  </table>
   </div>
 
   <!--Next Section-->
