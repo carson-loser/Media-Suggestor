@@ -27,11 +27,14 @@ const settingsYT = {
 	}
 };
 
-$.ajax(settingsYT).done(function (response) {
-	console.log(response);
-});
+// $.ajax(settingsYT).done(function (response) {
+// 	console.log(response);
+// });
 
-
+function buildSpotifyURL(search, type, limit) {
+	let url = "https://spotify81.p.rapidapi.com/search?q=" + search + "&type=" + type + "&offset=0&limit=" + limit + "&numberOfTopResults=5";
+	return url;
+}
 
 function youtubeSearchItUp (){
 	youtubeHomePage.style.display = "none";
