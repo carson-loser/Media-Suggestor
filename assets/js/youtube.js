@@ -87,6 +87,7 @@ $('#searchBTN').on("click", function () {
 
 
 function populateTable(playlistValues){
+	$("#playlistTableBody").empty();
 	$.each(playlistValues, function(i,val){
 		console.log(val);
 		$.each(val.data,function(j,playlist){
@@ -100,6 +101,7 @@ function populateTable(playlistValues){
 			<td><img src="`+imageUrl+`" width="114" height="64"></img></td>
 			</tr>
 			`;
+			
 			$("#playlistTableBody").append(html);
 
 		});
