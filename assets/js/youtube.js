@@ -92,7 +92,7 @@ function populateTable(playlistValues){
 		$.each(val.data,function(j,playlist){
 			console.log(playlist);
 			var imageUrl = ((playlist.thumbnail)[0]).url;
-			var playlistURL="https://www.youtube.com/watch?v=uODaDL0lgHU&list="+playlist.playlistId;
+			var playlistURL="https://www.youtube.com/watch?v="+playlist.videoId;
 			var html = `
 			<tr class='playlistItem' data-uri="`+playlistURL+`">
 			<td>`+playlist.title+`</td>
