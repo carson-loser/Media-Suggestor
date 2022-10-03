@@ -1,16 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background-color: #84828f;
+  background-color: #e9ecef;
 }
 
 header {
   padding: 20px;
-  background-color: #6a687a;
+  background-color: #1d3461;
   color: white;
   text-align: center;
   height: 90px;

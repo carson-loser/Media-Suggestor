@@ -21,6 +21,7 @@ function buildSpotifyURL(search, type, limit) {
 // 	console.log(response);
 // });
 
+
 function spotifySearchItUp() {
 	spotifyHomePage.style.display = "none";
 	spotifySearchPage.style.display = "block";
