@@ -1,12 +1,16 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 .spotify-content{
     height: 100vh;
 }
 
 body {
-    background-color: #f8f9fa;
+    background-color: #e9ecef;
 }
 
-td {
-    text-align: center;
- }
+
+
+
 
