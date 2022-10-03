@@ -1,15 +1,6 @@
-const settingsSPOT = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://spotify81.p.rapidapi.com/top_200_tracks",
-	"method": "GET",
-	"headers": {
-		"X-RapidAPI-Key": "58a8c3cfa1msh3972fdcf7022113p1dd750jsnc29b7d4ad22e",
-		"X-RapidAPI-Host": "spotify81.p.rapidapi.com"
-	}
-};
 
-function buildAjaxURL(search, type, limit) {
+
+function buildSpotifyURL(search, type, limit) {
 	let url = "https://spotify81.p.rapidapi.com/search?q=" + search + "&type=" + type + "&offset=0&limit=" + limit + "&numberOfTopResults=5";
 	return url;
 }
@@ -55,12 +46,12 @@ $(document).ready(function () {
 $('#searchBTN').on("click", function () {
 	var selectedData = $("#moodOptions").val();
 	var procText = "";
-	var allData=[];
+	var dataCollection=[];
 	// var selectedData= instance.getSelectedValues("#moodOptions");
 	$.each(selectedData, function (i, val) {
 		var moodText = moodOptions[parseInt(val)];
 		var removeSpace= moodText.replace(/ /g,"%20");
-		var url= buildAjaxURL(removeSpace, 'playlists',10);
+		var url= buildSpotifyURL(removeSpace, 'playlists',10);
 		var settings = {
 			"async": false,
 			"crossDomain": true,
@@ -73,16 +64,44 @@ $('#searchBTN').on("click", function () {
 		};
 	
 		$.ajax(settings).done(function (response) {
-			allData.push(response);
+			dataCollection.push(response);
+		});
+		// displayTable();
+	});
+	
+	populateTable(dataCollection);
+
+	//all parametsr poplated
+	
+});
+// function displayTable(){
+// $("#playlistTable").css("display", "none");
+// $("#playlistTable").css("display", "block");
+// };
+function populateTable(playlistValues){
+	$.each(playlistValues, function(i,val){
+console.log(val.playlists.items);
+		$.each(val.playlists.items,function(j,playlist){
+			var imageUrl = ((((playlist.data.images.items)[0]).sources)[0]).url;
+			var playlistURI=playlist.data.uri;
+			var html = `
+			<tr class='playlistItem' data-uri="`+playlistURI+`">
+			<td>`+playlist.data.name+`</td>
+			<td>`+playlist.data.owner.name+`</td>
+			<td><img src="`+imageUrl+`" width="64" height="64"></img></td>
+			</tr>
+			`;
+			$("#playlistTableBody").append(html);
+
 		});
 		
 	});
-	
+};
 
-	//all parametsr poplated
-	console.log(allData);
-	
+$(document).on("click", '.playlistItem', function () {
+	console.log($(this))
+	var playlistURI=$(this).data('uri');
+	window.open(playlistURI, '_self');
 });
-
 
 // var searchTerm= document.querySelector(".dropdown-content")
