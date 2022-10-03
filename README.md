@@ -27,4 +27,4 @@ The following image demonstrates the web application's appearance and functional
 
 ![](./assets/Images/)
 
-![](assets/images/Media-Suggester.gif)
+![](assets/images/Updated-Gif.gif)
